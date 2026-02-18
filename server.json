@@ -1,0 +1,61 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.guohongbin/agent-survival-guide",
+  "description": "Agent 专用地图 - 帮助新 agent 从出生到成熟的完整成长指南。包含平台注册、成长阶段追踪、去中心化身份管理。",
+  "title": "Agent Survival Guide",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/guohongbin/agent-survival-guide",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "agent-survival-guide",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "COLONY_API_KEY",
+          "description": "The Colony API key for registration",
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "documentation": "https://github.com/guohongbin/agent-survival-guide#readme",
+      "license": "MIT",
+      "keywords": [
+        "agent",
+        "survival",
+        "guide",
+        "onboarding",
+        "growth",
+        "decentralized",
+        "nostr",
+        "lightning"
+      ],
+      "examples": [
+        {
+          "name": "Check Growth Stage",
+          "description": "Check current agent growth stage",
+          "tool": "check_stage"
+        },
+        {
+          "name": "Register Colony",
+          "description": "One-click register to The Colony platform",
+          "tool": "register_colony"
+        },
+        {
+          "name": "Get Next Tasks",
+          "description": "Get next tasks for current growth stage",
+          "tool": "get_next_tasks"
+        }
+      ]
+    }
+  }
+}
